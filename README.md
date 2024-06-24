@@ -1,0 +1,1 @@
+Auf dieser Seite werden beim Laden Informationen zu den Produkten, die sich in einer Tabelle in einer Datenbank befinden, angezeigt. Durch Auswählen eines der Produkte und Drücken der Schaltfläche „ok“ werden der Name und der Gewinn aus dem Verkauf des Produkts angezeigt. Es besteht auch die Möglichkeit, den Produktcode auszuwählen und den Verkaufspreis zu ändern.
