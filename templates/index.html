@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form action="/" method="post">
+      {% if data %}
+          <table border="1">
+            <tr>
+                <th>choose:</th>
+                <th>id</th>
+                <th>name</th>
+                <th>number</th>
+                <th>purchase_cost</th>
+                <th>sales_price</th>
+            </tr>
+            {% for mytuple in data %}
+                <tr>
+                  <td><input type="radio" name="radio" value="{{ mytuple[0] }}"></td>
+                  {% for element in mytuple %}
+                      <td>{{ element }}</td>
+                  {% endfor %}
+                </tr>
+            {% endfor %}
+          </table><br><br>
+      {% endif %}
+      <input type="text" name="new_price">
+      <input type="submit" name="submit" value="changeprice"><br><br>
+      <input type="submit" name="submit" value="calprofit">
+      {% if profit %}
+          <h1>profit: {{ profit }}</h1>
+      {% endif %}
+      <!--{% if ids %}
+          {% for mytuple in ids %}
+              {% for id in mytuple  %}
+                <label>product id: {{ id }}</label>
+                <input type="radio" name="radio" value="{{ id }}"><br>
+              {% endfor %}
+          {% endfor %}
+      {% endif %}
+      <input type="submit" name="submit" value="calprofit"><br><br>
+     {% if name and profit %}
+         <p>{{ name }}:  {{ profit }}</p>
+     {% endif %}
+     <label>new price:</label>
+     <input type="text" name="new_price">
+      <input type="submit" name="submit" value="changeprice">-->
+  </form>
+</body>
+</html>
